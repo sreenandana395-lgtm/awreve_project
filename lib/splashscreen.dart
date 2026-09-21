@@ -6,22 +6,16 @@ class Splashscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-  
-
       backgroundColor: Colors.white,
 
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 30,
-              vertical: 30,
-            ),
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
 
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-
                 // Logo Circle
                 Container(
                   width: 120,
@@ -32,7 +26,7 @@ class Splashscreen extends StatelessWidget {
                     color: Colors.black,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.25),
+                        color: const Color.fromRGBO(158, 158, 158, 0.25),
                         blurRadius: 20,
                         spreadRadius: 3,
                       ),
@@ -75,11 +69,7 @@ class Splashscreen extends StatelessWidget {
                 const SizedBox(height: 20),
 
                 // Small line
-                Container(
-                  width: 70,
-                  height: 1,
-                  color: Colors.black,
-                ),
+                Container(width: 70, height: 1, color: Colors.black),
 
                 const SizedBox(height: 20),
 
@@ -87,10 +77,7 @@ class Splashscreen extends StatelessWidget {
                 const Text(
                   'Bridal Makeup & Beauty Services',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Color(0xFF666666),
-                  ),
+                  style: TextStyle(fontSize: 16, color: Color(0xFF666666)),
                 ),
 
                 const SizedBox(height: 5),
@@ -98,10 +85,7 @@ class Splashscreen extends StatelessWidget {
                 const Text(
                   'for your special day!',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Color(0xFF666666),
-                  ),
+                  style: TextStyle(fontSize: 16, color: Color(0xFF666666)),
                 ),
 
                 const SizedBox(height: 45),
@@ -112,10 +96,7 @@ class Splashscreen extends StatelessWidget {
                   height: 55,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(
-                        context,
-                        '/onboarding',
-                      );
+                      Navigator.pushNamed(context, '/onboarding');
                     },
 
                     style: ElevatedButton.styleFrom(
@@ -146,19 +127,13 @@ class Splashscreen extends StatelessWidget {
                   height: 55,
                   child: OutlinedButton(
                     onPressed: () {
-                      Navigator.pushNamed(
-                        context,
-                        '/login',
-                      );
+                      Navigator.pushNamed(context, '/login');
                     },
 
                     style: OutlinedButton.styleFrom(
                       foregroundColor: Colors.black,
 
-                      side: const BorderSide(
-                        color: Colors.black,
-                        width: 1,
-                      ),
+                      side: const BorderSide(color: Colors.black, width: 1),
 
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
